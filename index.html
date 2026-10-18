@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>INFINITY – Blender Artist</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div>
+      <h1>INFINITY</h1>
+      <p>3D artist making animations and renders in Blender.</p>
+      <a class="btn" href="#work">See the work</a>
+
+      <!-- CHANGE THESE 3 LINKS to your own pages -->
+      <div class="links">
+        <a class="btn" href="https://www.youtube.com/@infinitygg" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn" href="https://www.patreon.com/cw/MrInfinitygg" target="_blank" rel="noopener">Patreon</a>
+        <a class="btn" href="https://infinitygg.gumroad.com/" target="_blank" rel="noopener">Gumroad</a>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </header>
+
+  <section id="work">
+    <h2>Work</h2>
+    <div class="filters" role="group" aria-label="Filter work">
+      <button data-f="all" aria-pressed="true">All</button>
+      <button data-f="render" aria-pressed="false">Renders</button>
+      <button data-f="animation" aria-pressed="false">Animations</button>
+    </div>
+    <!-- Gallery tiles are created by script.js (edit the "works" list there) -->
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about">
+      <div>
+        <p>Watch new animations on YouTube, support the work and get early access on Patreon, and download project files and assets from Gumroad.</p>
+        <!-- CHANGE THIS email -->
+        <p>Contact: <a href="mailto:pubudushan08@gmail.com">pubudushan08@gmail.com</a></p>
+      </div>
+      <div>
+        <ul class="tools"><li>Blender</li><li>Cycles</li><li>EEVEE</li><li>Geometry Nodes</li><li>Substance Painter</li></ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 INFINITY</div></footer>
+
+<dialog id="dlg" aria-label="Project preview">
+  <button id="close">Close</button>
+  <div class="big" id="dBig"></div>
+  <div class="info"><b id="dT"></b><p id="dD"></p></div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
